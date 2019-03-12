@@ -1,6 +1,10 @@
-Escreva um programa que determine o maior e o menor número de N números reais dados pelo utilizador. Considere que N é um valor pedido ao utilizador.
-
-*Sugestão:` inicialize o maior e o menor com o primeiro valor lido.
+Escreva um programa que determine o maior e o menor número de N números reais dados pelo utilizador. 
+	Considere que N é um valor pedido ao utilizador.
+Input : 52
+	3
+Output: Menor: 3
+	Maior: 52
+		
 int main() {
 
 	int *p, N, cont = 1, max, min, asker;
