@@ -14,8 +14,8 @@ int main() {
 	int N, sum = 0;
 
 	while( (N = getchar()) != '\n' && N != EOF) {
-		if (N < 58 && N > 48){
-			sum = sum*10 + (int)N - '0';
+		if (N <= '9' && N >= '0' ){
+			sum = sum*10 + (N - '0');
 		}
 	}
 	printf("%d\n",sum );
