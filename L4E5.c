@@ -1,5 +1,3 @@
-Another Exercise:
-
 Escreva uma programa que lê caracteres do teclado, caracter a caracter, 
 até encontrar o caracter '\n' e escreve a linha lida no terminal. 
 Implemente a função int leLinha(char s[]) que lê a linha para a string s e 
