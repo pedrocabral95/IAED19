@@ -11,7 +11,6 @@ Output: O maior numero é : 45655454350451345.
 
 
 
-
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
@@ -21,7 +20,6 @@ int main() {
 	char *stringOne, *stringTwo;
 
 	unsigned long int _nOne = 0, _nTwo = 0, _iter;
-
 	stringTwo = (char *) malloc(sizeof(char)*81); /* string max value 80 + 1 ('\0')*/
 	stringOne = (char *) malloc(sizeof(char)*81); /* string max value 80 + 1 ('\0')*/
 
@@ -29,20 +27,21 @@ int main() {
 
 	scanf("%s", stringOne);
 
-	for ( _iter = 0 ; stringOne[_iter] != '\0' && _iter < strlen(stringOne); _iter++) {
+	for ( _iter = 0 ; stringOne[_iter] != '\0' && _iter < (unsigned long)strlen(stringOne); _iter++) {
 		_nOne = _nOne * 10 + stringOne[_iter] - '0';
 	}
 
 	scanf("%s", stringTwo);
 
-	for ( _iter = 0 ; stringTwo[_iter] != '\0' && _iter < strlen(stringTwo); _iter++) {
+	for ( _iter = 0 ; stringTwo[_iter] != '\0' && _iter < (unsigned long)strlen(stringTwo); _iter++) {
 		_nTwo = _nTwo * 10 + stringTwo[_iter] - '0';
 	}
 
 	if (_nTwo > _nOne)
-		printf("O maior numero é : %lu. \n", _nTwo);
+		fputs(stringTwo,stdout);
 	if (_nOne > _nTwo)
-		printf("O maior numero é : %lu. \n", _nOne);
+		fputs(stringOne, stdout);
 	if ( _nTwo == _nOne) {
-		printf("Numero iguais\n");
+		fputs("Numero iguais\n",stdout);
 	}
+	return 0;
