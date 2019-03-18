@@ -5,9 +5,7 @@ Input: None
 Output: Olá, mundo!
 */
 
-#include <stdio.h>
-
 int main() {
-  printf("Olá, mundo\n");
-  return 0;
- }
+	printf("Ola, mundo!\n");	
+	return 0;
+}
