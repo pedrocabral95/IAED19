@@ -45,7 +45,7 @@ int main() {
 	_cp1 = readNumComplex();
 	_cp2 = readNumComplex();
 
-	_sum	= sumComplex(_cp1,_cp2);
+	_sum = sumComplex(_cp1,_cp2);
 
 	writeNumComplex(_sum);
 	return 0;
